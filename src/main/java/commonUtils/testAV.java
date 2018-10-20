@@ -9,7 +9,6 @@ import org.apache.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.sun.istack.internal.logging.Logger;
 
 public class testAV {
 
