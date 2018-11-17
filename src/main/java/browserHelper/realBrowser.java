@@ -10,10 +10,13 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import commonUtils.propertyFileUtil;
 
 public class realBrowser {
-	private String browsertype;
+
+	
+	/*
+	 * 	private String browsertype;
 	public static realBrowser realbrowser;
 	
-/*	private realBrowser() throws IOException {
+	private realBrowser() throws IOException {
 		startBrowser();	
 	}
 	
