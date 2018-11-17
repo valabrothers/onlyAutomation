@@ -3,7 +3,6 @@ package stepDef;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import junit.framework.Assert;
 
 public class stepDef {
 
@@ -29,7 +28,7 @@ System.out.println("Inside Given");
 	public void test_Then_Fail() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 
-		Assert.assertEquals("Expected", "Actual");	
+		System.out.println("Fail assert");
 }
 
 

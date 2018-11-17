@@ -10,7 +10,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import commonUtils.propertyFileUtil;
 
 public class realBrowser {
-	private String browsertype,browserbaseurl;
+	private String browsertype;
 	public static realBrowser realbrowser;
 	
 	private realBrowser() throws IOException {
@@ -32,7 +32,7 @@ public class realBrowser {
 	public WebDriver startBrowser() throws IOException {
 		WebDriver driver=null;
 		browsertype=propertyFileUtil.getInstance().getProperty("browser.type");
-		browserbaseurl=propertyFileUtil.getInstance().getProperty("browser.base.url");
+		propertyFileUtil.getInstance().getProperty("browser.base.url");
 
 		if (browsertype.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/resources/chromedriver.exe");
