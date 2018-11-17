@@ -13,7 +13,7 @@ public class realBrowser {
 	private String browsertype;
 	public static realBrowser realbrowser;
 	
-	private realBrowser() throws IOException {
+/*	private realBrowser() throws IOException {
 		startBrowser();	
 	}
 	
@@ -51,4 +51,6 @@ public class realBrowser {
 
 
 	}
+	*/
+	
 }
