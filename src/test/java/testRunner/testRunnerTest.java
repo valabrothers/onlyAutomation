@@ -17,7 +17,7 @@ plugin= {
 }
 )
 
-public class testRunner {
+public class testRunnerTest {
 
 
 
