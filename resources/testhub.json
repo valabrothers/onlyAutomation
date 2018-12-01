@@ -1,0 +1,12 @@
+{
+  "host": "localhost",
+  "port": 11000,
+  "newSessionWaitTimeout": -1,
+  "servlets" : [],
+  "prioritizer": null,
+  "nodePolling": 5000,
+  "cleanUpCycle": 5000,
+  "browserTimeout": 0,
+  "jettyMaxThreads":-1
+}
+
