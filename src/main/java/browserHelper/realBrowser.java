@@ -1,9 +1,11 @@
 package browserHelper;
 
+import java.io.File;
 import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
@@ -40,11 +42,11 @@ public class realBrowser {
 
 		if (browsertype.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+ "/resources/chromedriver.exe");
-			driver=new FirefoxDriver();
+			driver=new ChromeDriver();
 
 		}else if (browsertype.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+ "/resources/geckodriver.exe");
-			driver=new ChromeDriver();
+			driver=new FirefoxDriver();
 
 		}else if (browsertype.equalsIgnoreCase("ie")) {
 			System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+ "/resources/IEDriverServer.exe");
@@ -55,6 +57,5 @@ public class realBrowser {
 
 
 	}
-	
-	
+
 }

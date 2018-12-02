@@ -68,6 +68,11 @@ public static void ffRemote() throws MalformedURLException {
         
         System.out.println("connected google using remote chrome - ==> Title is : "+driver1.getTitle());
         driver1.quit();
-
+	
 	}
 }
+
+
+/*
+ * https://www.seleniumeasy.com/selenium-tutorials/configure-selenium-grid-using-json-config-file
+ */
