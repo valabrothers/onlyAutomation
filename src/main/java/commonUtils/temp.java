@@ -52,18 +52,18 @@ public class temp {
 		    URL url = executor.getAddressOfRemoteServer();
 		    SessionId session_id = driver.getSessionId();
 		    driver.get("https://gmail.com");
-		    driver.findElement(By.id("identifierId")).sendKeys("niharikamishranmiet.95@gmail.com");
+		    driver.findElement(By.id("identifierId")).sendKeys("anyEmailID@gmail.com");
 		    //RveJvd snByac
 		    driver.findElement(By.cssSelector("span.RveJvd.snByac")).click();
 		    Thread.sleep(5000);
-		    driver.findElement(By.name("password")).sendKeys("donotdisturb1005");
+		    driver.findElement(By.name("password")).sendKeys("testpwd");
 		    driver.findElement(By.cssSelector("span.RveJvd.snByac")).click();
 		    System.out.println("***********************************************frst captured"+session_id);
 
 		    RemoteWebDriver driver2 = createDriverFromSession(session_id, url);
 		    System.out.println(driver2.getTitle());
 		    Thread.sleep(5000);
-		    driver2.findElement(By.name("q")).sendKeys("niharika");
+		    driver2.findElement(By.name("q")).sendKeys("anyEmailID");
 		    WebElement searchbar= driver.findElement(By.name("q"));
 		    searchbar.sendKeys(Keys.ENTER);
 		    System.out.println("********************************************reusing");
